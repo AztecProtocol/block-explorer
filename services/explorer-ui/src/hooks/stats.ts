@@ -22,16 +22,16 @@ export const useTotalContracts = (): UseQueryResult<string, Error> => {
   });
 };
 
-export const useAvarageFees = (): UseQueryResult<string, Error> => {
+export const useAverageFees = (): UseQueryResult<string, Error> => {
   return useQuery<string, Error>({
-    queryKey: ["useAvarageFees"],
+    queryKey: ["useAverageFees"],
     queryFn: statsL2Api.getL2AverageFees,
   });
 };
 
-export const useAvarageBlockTime = (): UseQueryResult<string, Error> => {
+export const useAverageBlockTime = (): UseQueryResult<string, Error> => {
   return useQuery<string, Error>({
-    queryKey: ["useAvarageBlockTime"],
+    queryKey: ["useAverageBlockTime"],
     queryFn: statsL2Api.getL2AverageBlockTime,
   });
 };
