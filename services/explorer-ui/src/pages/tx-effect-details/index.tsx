@@ -50,7 +50,7 @@ export const TxEffectDetails: FC = () => {
           </div>
           <div className="bg-white rounded-lg shadow-md p-4">
             {selectedTab === "ecryptedLogs" && (
-              <div className="">
+              <div>
                 {txEffects.encryptedLogs.functionLogs.map(
                   (encryption, index) => {
                     const entries = encryption.logs.map((log) => {
@@ -75,7 +75,7 @@ export const TxEffectDetails: FC = () => {
               </div>
             )}
             {selectedTab === "unencryptedLogs" && (
-              <div className="">
+              <div>
                 {txEffects.unencryptedLogs.functionLogs.map(
                   (unencrypted, index) => {
                     const entries = unencrypted.logs.map((log) => {
@@ -100,7 +100,7 @@ export const TxEffectDetails: FC = () => {
               </div>
             )}
             {selectedTab === "nullifiers" && (
-              <div className="">
+              <div>
                 {txEffects.nullifiers.map((nullifier) => (
                   <KeyValueDisplay
                     data={[{ label: "Nullifier", value: nullifier }]}
@@ -134,7 +134,7 @@ export const TxEffectDetails: FC = () => {
               </div>
             )}
             {selectedTab === "noteHashes" && (
-              <div className="">
+              <div>
                 {txEffects.noteHashes.map((nullifier) => (
                   <KeyValueDisplay
                     data={[{ label: "Note Hashes", value: nullifier }]}
@@ -143,7 +143,7 @@ export const TxEffectDetails: FC = () => {
               </div>
             )}
             {selectedTab === "l2ToL1Msgs" && (
-              <div className="">
+              <div>
                 {txEffects.l2ToL1Msgs.map((nullifier) => (
                   <KeyValueDisplay
                     data={[{ label: "L2 to L1 Messages", value: nullifier }]}
