@@ -1,6 +1,6 @@
 FROM node:20-alpine
 
-RUN apk update && apk add jq
+RUN apk update && apk add jq && rm -rf /var/cache/apk/*
 
 WORKDIR /usr/main
 
